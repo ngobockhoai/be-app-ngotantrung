@@ -5,6 +5,7 @@ namespace App\Http\Controllers\API;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\EventA;
+use App\Models\EventB;
 use Validator;
 class EventAController extends Controller
 {
@@ -59,9 +60,13 @@ class EventAController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Request $request)
     {
-        //
+        $email = $request->email;
+        $dataA = EventA::where('email' ,'=', $email)->get();
+        $dataB = EventB::where('email','=',$email)->get();
+        $data = $dataA->concat($dataB);
+        return response()->json($data);
     }
 
     /**
@@ -85,10 +90,10 @@ class EventAController extends Controller
     public function update(Request $request, $id)
     {
         $data = EventA::find($id);
-        $data->first_name = $request->input('first_name');
-        $data->last_name = $request->input('last_name');
-        $data->email = $request->input('email');
-        $data->work_location = $request->input('work_location');
+        $data->first_name = $request->first_name;
+        $data->last_name = $request->last_name;
+        $data->email = $request->email;
+        $data->work_location = $request->work_location;
         $data->save();
         return response()->json($data);
     }
