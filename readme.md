@@ -9,7 +9,7 @@ open terminal:
 - run -> php artisan serve
 
 ## CONFIG THIS .ENV WITH YOUR DATABASE
-- Change .env.exmaple to .env
+- Change .env.example to .env
 - DB_DATABASE=YOURDATABASE
 - DB_USERNAME=YOURUSERNAME
 - DB_PASSWORD=YOURPASSWORD
