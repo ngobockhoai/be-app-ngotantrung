@@ -8,7 +8,8 @@ open terminal:
 - run -> php artisan migrate
 - run -> php artisan serve
 
-## CHANGE .ENV.EXAMPLE AND CONFIG THIS .ENV WITH YOUR DATABASE
+## CONFIG THIS .ENV WITH YOUR DATABASE
+- Change .env.exmaple to .env
 - DB_DATABASE=YOURDATABASE
 - DB_USERNAME=YOURUSERNAME
 - DB_PASSWORD=YOURPASSWORD
