@@ -27,7 +27,7 @@ class EventAController extends Controller
     public function create(Request $request)
     {
         $input = $request->all();
-        $product = EventA::create($input);
+        $eventA = EventA::create($input);
         $validator = Validator::make($input, [
             'first_name' => 'required',
             'last_name' => 'required',
