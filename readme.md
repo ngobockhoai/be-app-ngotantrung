@@ -4,7 +4,9 @@ INSTALL COMPOSER
 ## IN SOURCE CODE
 open terminal:
 - run composer install 
+- php artisan migrate
 - php artisan serve
+
 ## CONFIG THIS .ENV WITH YOUR DATABASE
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
