@@ -37,7 +37,7 @@
             @endif
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div class="flex justify-center pt-8 sm:justify-start sm:pt-0 font-bold" style="font-size: 200px">
+                <div class="flex justify-center pt-8 sm:justify-start sm:pt-0 font-bold" style="font-size: 65px">
                    BE APP NGÔ TẤN TRUNG
                 </div>
 
