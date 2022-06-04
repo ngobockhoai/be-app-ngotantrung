@@ -22,4 +22,11 @@ open terminal in source code:
 ## API
 -  Open Routes/api.php to see the answers of the test.
 
+For example: 
+- https://be-app-ngotantrung.herokuapp.com/api/v2/show/
+- https://be-app-ngotantrung.herokuapp.com/api/v1/show/
+- https://be-app-ngotantrung.herokuapp.com/api/auth/register
+- https://be-app-ngotantrung.herokuapp.com/api/auth/login
+
+
 ## THANK YOU!
